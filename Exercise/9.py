@@ -1,4 +1,4 @@
-fin = open(r'C:\Users\Ahmad Omar Ahsan\Documents\words.txt')
+fin = open('words.txt')
 # for line in fin:
 # word = line.strip()
 # #print(word)
