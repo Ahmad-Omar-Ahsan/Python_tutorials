@@ -109,6 +109,11 @@ class Kangaroo(object):
         self.pouch_contents = contents
 
     def put_in_pouch(self, item):
+        """
+
+        :param item: object or any other data type
+        :return:
+        """
         self.pouch_contents.append(item)
 
     def __str__(self):

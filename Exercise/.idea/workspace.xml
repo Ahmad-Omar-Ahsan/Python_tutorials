@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1b4b8760-9ceb-458b-a44b-1e86a58c0908" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Exercise.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Exercise.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17.py" beforeDir="false" afterPath="$PROJECT_DIR$/17.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9.py" beforeDir="false" afterPath="$PROJECT_DIR$/9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPAL _(All Slides _+_ Labs).zip" beforeDir="false" />
-    </list>
+    <list default="true" id="1b4b8760-9ceb-458b-a44b-1e86a58c0908" name="Default Changelist" comment="Attempted Chapter 17" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +185,14 @@
       <option name="presentableId" value="Default" />
       <updated>1570468251899</updated>
     </task>
+    <task id="LOCAL-00001" summary="Attempted Chapter 17">
+      <created>1574166521352</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574166521352</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -209,5 +207,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Attempted Chapter 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempted Chapter 17" />
   </component>
 </project>
