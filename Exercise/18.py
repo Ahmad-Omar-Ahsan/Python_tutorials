@@ -1,3 +1,6 @@
+import random
+
+
 class Time(object):
     """
     represents the time of the day. Attributes: hour, ,minute, second
@@ -72,7 +75,7 @@ class Card(object):
     rank_names = [None, 'Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
 
     def __str__(self):
-        return '%s of %s' %(Card.rank_names[self.rank], Card.suit_names[self.suit])
+        return '%s of %s' % (Card.rank_names[self.rank], Card.suit_names[self.suit])
 
     def __cmp__(self, other):
         # check the suits
@@ -94,3 +97,70 @@ queen_of_diamonds = Card(1, 12)
 print(queen_of_diamonds)
 card1 = Card(2, 11)
 print(card1)
+print(type(Card))
+
+
+class Deck(object):
+
+    def __init__(self):
+        self.cards = []
+        for suit in range(4):
+            for rank in range(1, 14):
+                card = Card(suit, rank)
+                self.cards.append(card)
+
+    def __str__(self):
+        res = []
+        for card in self.cards:
+            res.append(str(card))
+        return '\n'.join(res)
+
+    def pop_card(self):
+        return self.cards.pop()
+
+    def add_card(self, card):
+        return self.cards.append(card)
+
+    def shuffle(self):
+        random.shuffle(self.cards)
+
+    def sort_cards(self):
+        return self.cards.sort()
+
+    def move_cards(self, hand, num):
+        for i in range(num):
+            hand.add_card(self.pop_card())
+
+    def dead_hands(self, number_of_hands, number_of_cards_per_hand):
+        list_of_hands = []
+        it = number_of_hands
+        itt = number_of_cards_per_hand
+        for i in range(number_of_hands):
+            h = Hand('new hand')
+            for j in range(number_of_cards_per_hand):
+                h.add_card(self.pop_card())
+            list_of_hands.append(h)
+        return list_of_hands
+
+
+deck = Deck()
+# print(deck)
+
+
+class Hand(Deck):
+    """represents a hand of playing cards"""
+    def __init__(self, label=''):
+        self.cards = []
+        self.label = label
+
+
+hand = Hand('new hand')
+print(hand.cards)
+print(hand.label)
+card = deck.pop_card()
+hand.add_card(card)
+# print(hand)
+p = deck.dead_hands(4, 5)
+
+
+
